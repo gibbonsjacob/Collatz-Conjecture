@@ -17,7 +17,6 @@ function collatz(num){
   if (num != 1){   
     depth++;
     if (isEven(num)){
-      depth++;
       collatz(num/2);
     } else {
       collatz(3 * num + 1);
